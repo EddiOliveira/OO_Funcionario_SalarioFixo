@@ -16,9 +16,10 @@ class FuncionarioHoristaTest {
     @Test
     void deveCalcularSalario() {
         FuncionarioHorista funcionarioHorista = new FuncionarioHorista();
-        funcionarioHorista.setValorHora(100.0f);
+        funcionarioHorista.setValorHora(50.0f);
         funcionarioHorista.setNumDias(20);
         funcionarioHorista.setNumHorasDia(10);
+        funcionarioHorista.setSalarioFixo(10000.0f);
         assertEquals(20000.0f, funcionarioHorista.calcularSalario());
     }
 }

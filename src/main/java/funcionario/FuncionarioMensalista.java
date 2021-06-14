@@ -13,6 +13,6 @@ public class FuncionarioMensalista extends Funcionario {
     }
 
     public float calcularSalario() {
-        return this.valorMes;
+        return this.getSalarioFixo() + this.valorMes;
     }
 }
